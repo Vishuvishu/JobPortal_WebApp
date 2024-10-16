@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('../../image/background1.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+ 
+  .feed-container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .home-button {
+    background-color: #4A148C;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+  }
+  
+  .home-link {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .search-box input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #4A148C;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .card {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color:white;
+  }
+  
+  .card p, .card ul {
+    margin: 10px 0;
+    color:white;
+
+  }
+  
+  .card ul {
+    padding-left: 20px;
+    color:white;
+
+  }
+  
+  .card ul li {
+    list-style: disc;
+    color:white;
+
+  }
+  
+  @media (min-width: 600px) {
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .home-button {
+      margin-bottom: 0;
+    }
+  
+    .search-box {
+      width: 75%;
+    }
+  
+    .grid-container {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+  
+    .card {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .card {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
