@@ -1,0 +1,7 @@
+here in git hub repository i have not uploaded ine important file which is application.properties bcs it has sensitive infromation but i am here giving instructions to it
+in folder name resources there should be one file named as "application.properties"
+in this file copy and paste this data
+>> 
+spring.application.name=jobportal
+spring.data.mongodb.uri=mongodb url
+spring.data.mongodb.database=database name here mine is jobportal
