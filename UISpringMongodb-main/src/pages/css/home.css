@@ -1,0 +1,88 @@
+/* body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  } */
+  
+  .background {
+    background-image: url('../../image/background1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay {
+    /* background: rgba(145, 143, 143, 0.116); */
+    background-color: #15172b;
+    /* backdrop-filter: blur(30px);  */
+    padding: 20px;
+    /* background-color:rgba(69, 70, 71, 0.308); */
+    border-radius: 10px;
+    box-shadow: rgba(245, 245, 245, 0.445) 0px 0px 0px 2px;
+         text-align: center;
+         color:rgb(255, 255, 255);
+  }
+  
+  .ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .ul li {
+    
+    margin: 10px 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+
+
+/* CSS */
+.button-52 {
+    margin:2% 3%;
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  border: 1px solid rgb(134, 128, 128);;
+  color:rgb(134, 128, 128);
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(39, 37, 37, 0.521);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-52:after {
+  content: "";
+  background-color: #ff000034;
+  
+   /* backdrop-filter: blur(300px); */
+
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.button-52:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+@media (min-width: 768px) {
+  .button-52 {
+    padding: 13px 50px 13px;
+  }
+}
